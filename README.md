@@ -1,6 +1,6 @@
-# Gaussian Process Partially Observed Model (GPPOM)
+# ANM Mixture Model (ANM-MM)
 
-Python code of algorithm for estimating latent representations in ANM Mixture Model (ANM-MM) and further conduct causal inference and mechanism clustering.
+Python code of algorithm for conducting causal inference and mechanism clustering for ANM-MM.
 
 ## Getting Started
 
@@ -15,37 +15,37 @@ We test the code using **Anaconda 4.3.30 64-bit for python 2.7** on Windows 10. 
 
 ## Running the tests
 
-After installing all required packages, you can run *test.py* to see whether **GPPOM** could work normally.
+After installing all required packages, you can run *test.py* to see whether **ANM-MM** could work normally.
 
 The test code does the following:
 1. it generate 100 observations from two exponential functions.
 (Data is organized in an 100-by-2 *numpy array*. The first column is the cause $X$ and the second is the effect $Y$.)
-2. GPPOM is applied on the generated data to first conduct clustering and then infer the causal direction.
+2. ANM-MM is applied on the generated data to first conduct clustering and then infer the causal direction.
 
 
-## Apply **GPPOM** on your data
+## Apply **ANM-MM** on your data
 
 ### Usage
 
-Import **GPPOM** using
+Import **ANM-MM** using
 
 ```python
-from GPPOM import GPPOM_cd, GPPOM_clu
+from ANMMM import ANMMM_cd, ANMMM_clu
 ```
 
-Apply **GPPOM** on your data
+Apply **ANM-MM** on your data
 
 ```python
 # causal inference
-direction = GPPOM_cd(data, lda)
+direction = ANMMM_cd(data, lda)
 
 # mechanism clustering
-labels = GPPOM_clu(data, label, lda)
+labels = ANMMM_clu(data, label, lda)
 ```
 
 ### Description
 
-Input of function **GPPOM_cd()** and **GPPOM_clu()**
+Input of function **ANMMM_cd()** and **ANMMM_clu()**
 
 | Argument  | Description  |
 |---|---|
@@ -53,13 +53,13 @@ Input of function **GPPOM_cd()** and **GPPOM_clu()**
 |label | List of true labels of each observation. |
 |lda |The parameter $\lambda$ which controls the importance of HSIC term. |
 
-Output of function **GPPOM_cd()**
+Output of function **ANMMM_cd()**
 
 | Argument  | Description  |
 |---|---|
 |direction | 1  - the first column is the cause;<br/>-1 - the second column is the cause;<br/>0  - can not tell. |
 
-Output of function **GPPOM_clu()**
+Output of function **ANMMM_clu()**
 
 | Argument  | Description  |
 |---|---|
