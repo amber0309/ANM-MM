@@ -78,4 +78,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Hat tip to [James Hensman](http://jameshensman.github.io/) for his elegant [GP-LVM](https://papers.nips.cc/paper/2540-gaussian-process-latent-variable-models-for-visualisation-of-high-dimensional-data.pdf) [code](https://github.com/jameshensman/pythonGPLVM).
+* Hat tip to [James Hensman](http://jameshensman.github.io/) for his elegant [GP-LVM code](https://github.com/jameshensman/pythonGPLVM).
