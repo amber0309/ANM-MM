@@ -3,8 +3,8 @@
 Python implementation of the following paper
 
 [Causal Inference and Mechanism Clustering of A Mixture of Additive Noise Models.](http://papers.nips.cc/paper/7767-causal-inference-and-mechanism-clustering-of-a-mixture-of-additive-noise-models)  
-Hu, Shoubo, Zhitang Chen, Vahid Partovi Nia, C. H. A. N. Laiwan, and Yanhui Geng.  
-*Advances in Neural Information Processing Systems.* 2018.
+Hu, Shoubo, Zhitang Chen, Vahid Partovi Nia, Chan Laiwan, and Yanhui Geng.  
+*Advances in Neural Information Processing Systems.* (**NeurIPS**) 2018.
 
 ## Getting Started
 
