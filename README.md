@@ -71,8 +71,8 @@ Output of function **ANMMM_clu()**
 
 ## Authors
 
-* **Shoubo Hu** - shoubo DOT sub AT gmail DOT com
-* **Zhitang Chen** - chenzhitang2 AT huawei DOT com
+* **Shoubo Hu** - shoubo [dot] sub [at] gmail [dot] com
+* **Zhitang Chen** - chenzhitang2 [at] huawei [dot] com
 
 See also the list of [contributors](https://github.com/amber0309/GPPOM/graphs/contributors) who participated in this project.
 
