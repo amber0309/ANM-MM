@@ -1,6 +1,8 @@
 # ANM Mixture Model (ANM-MM)
 
-Python code of algorithm for conducting causal inference and mechanism clustering for ANM-MM.
+Python implementation of the following paper
+
+Hu, Shoubo, et al. "Causal Inference and Mechanism Clustering of A Mixture of Additive Noise Models." Advances in Neural Information Processing Systems. 2018.
 
 ## Getting Started
 
