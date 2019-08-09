@@ -18,8 +18,8 @@ We test the code using **Anaconda 4.3.30 64-bit for python 2.7** on Windows 10. 
 After installing all required packages, you can run *test.py* to see whether **ANM-MM()** could work normally.
 
 The test code does the following:
-1. it generates 100 observations (a (100, 2) *numpy array*) from two exponential functions. The first column is the cause $X$ and the second is the effect $Y$.
-2. ANM-MM() is applied on the generated data to first conduct clustering and then infer the causal direction.
+1. it generates 100 observations (a (100, 2) *numpy array*) from two exponential functions. The first column is the cause `X` and the second is the effect `Y`.
+2. ANM-MM is applied on the generated data to first conduct clustering and then infer the causal direction.
 
 ## Apply **ANM-MM** on your data
 
@@ -47,7 +47,7 @@ Input of function `ANMMM_cd()` and `ANMMM_clu()`
 
 | Argument  | Description  |
 |---|---|
-|data | Numpy array with 2 columns and any number of rows. Rows represent i.i.d. samples, The first column is the hypothetical $X$ and the second is the hypothetical $Y$.|
+|data | Numpy array with 2 columns and any number of rows. Rows represent i.i.d. samples, The variables in the first and second column are called `X` and `Y`, respectively.|
 |label | List of true labels of each observation. |
 |lda |The parameter $\lambda$ which controls the importance of HSIC term. |
 
