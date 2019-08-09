@@ -6,26 +6,20 @@ Python implementation of the following paper
 Hu, Shoubo, Zhitang Chen, Vahid Partovi Nia, Laiwan Chan, and Yanhui Geng.  
 *Advances in Neural Information Processing Systems.* (**NeurIPS**) 2018.
 
-## Getting Started
+## Prerequisites
+- numpy
+- scipy
+- sklearn
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-- NumPy
-- SciPy
-- scikit-learn
-
-We test the code using **Anaconda 4.3.30 64-bit for python 2.7** on Windows 10. Any later version should still work perfectly. The download page of Anaconda is [here](https://www.anaconda.com/download/).
+We test the code using **Anaconda 4.3.30 64-bit for python 2.7** on Windows 10. Any later version should still work perfectly.
 
 ## Running the tests
 
-After installing all required packages, you can run *test.py* to see whether **ANM-MM** could work normally.
+After installing all required packages, you can run *test.py* to see whether **ANM-MM()** could work normally.
 
 The test code does the following:
-1. it generate 100 observations from two exponential functions.
-(Data is organized in an 100-by-2 *numpy array*. The first column is the cause $X$ and the second is the effect $Y$.)
-2. ANM-MM is applied on the generated data to first conduct clustering and then infer the causal direction.
-
+1. it generates 100 observations (a (100, 2) *numpy array*) from two exponential functions. The first column is the cause $X$ and the second is the effect $Y$.
+2. ANM-MM() is applied on the generated data to first conduct clustering and then infer the causal direction.
 
 ## Apply **ANM-MM** on your data
 
@@ -49,7 +43,7 @@ labels = ANMMM_clu(data, label, lda)
 
 ### Description
 
-Input of function **ANMMM_cd()** and **ANMMM_clu()**
+Input of function `ANMMM_cd()` and `ANMMM_clu()`
 
 | Argument  | Description  |
 |---|---|
@@ -57,13 +51,13 @@ Input of function **ANMMM_cd()** and **ANMMM_clu()**
 |label | List of true labels of each observation. |
 |lda |The parameter $\lambda$ which controls the importance of HSIC term. |
 
-Output of function **ANMMM_cd()**
+Output of function `ANMMM_cd()`
 
 | Argument  | Description  |
 |---|---|
 |direction | 1  - the first column is the cause;<br/>-1 - the second column is the cause;<br/>0  - can not tell. |
 
-Output of function **ANMMM_clu()**
+Output of function `ANMMM_clu()`
 
 | Argument  | Description  |
 |---|---|
