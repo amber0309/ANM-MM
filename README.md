@@ -49,7 +49,7 @@ Input of function `ANMMM_cd()` and `ANMMM_clu()`
 |---|---|
 |data | Numpy array with 2 columns and any number of rows. Rows represent i.i.d. samples, The variables in the first and second column are called `X` and `Y`, respectively.|
 |label | List of true labels of each observation. |
-|lda |The parameter $\lambda$ which controls the importance of HSIC term. |
+|lda |The parameter &lambda which controls the importance of HSIC term. |
 
 Output of function `ANMMM_cd()`
 
